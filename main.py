@@ -31,21 +31,28 @@
 # else:
 #     print('True')
 ################################################################
-#вложенные циклы
+# #вложенные циклы
+# num = int(input())
+# for i in range(num, 0, -1):
+#     for j in range(i, 0, -1):
+#         print(j, end='')
+#     print()
+# ################################################################
+# num = int(input())
+# for i in range(num+1):
+#     for j in range(i, 0, -1):
+#         print(i, end='')
+#     print(' ')
 ################################################################
 #лямбда функции
 # get_discount = lambda x,y: x-((x*y)/100)
 # print(get_discount(1500, 50))
-################################################################
-#без лямбда функции
-# n=int(input())
-# sum = 0
-# while n>0:
-#     sum=sum+n
-#     n=n-1
-# print(sum)
-#с лямбда функцией
-# sum_numbers = lambda n:
+# ################################################################
+# def sum_number(num):
+#     if num == 1:
+#         return True
+#     return num + sum_number(num-1)
+# print(sum_number(5))
 ################################################################
 # is_triplet = lambda a, b, c: print('True') if (a*a)+(b*b) == c*c else print('False')
 # is_triplet(1, 2, 3)
